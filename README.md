@@ -94,7 +94,7 @@ end
 e = Example.new
 e.some_dependency.some_method
 
-e.invoked?(:some_method) #=> true
+e.some_dependency.invoked?(:some_method) #=> true
 ```
 
 Invocation recording can be disabled using the dependency declaration's `record` parameter.
